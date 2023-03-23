@@ -1,4 +1,5 @@
 import { CountExperience, Footer, Hero, Navbar, Portfolio, Testimonials } from '@/components'
+import { Contact } from '@/components/Contact'
 import Head from 'next/head'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
           <CountExperience/>
           <Portfolio/>
           <Testimonials/>
+          <Contact/>
         </div>
       </main>
     </>

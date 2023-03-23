@@ -34,7 +34,7 @@ export const Portfolio = () => {
             projects.map((item, i) => {
 
               return(
-                <div className='col-span-3 relative h-64 card-hover-img overflow-hidden card-project last:col-span-3 rounded-xl'>
+                <div key={i} className='col-span-3 relative h-64 card-hover-img overflow-hidden card-project last:col-span-3 rounded-xl'>
                   <img className='object-cover w-full h-full relative rounded-xl' src={item.img} alt={item.name} />
                   <div className='absolute inset-0 flex p-4 items-end bg-gray-600/20 rounded-xl'>
                     <h1 className='font-semibold uppercase'>{item.name}</h1>

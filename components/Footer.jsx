@@ -59,40 +59,9 @@ export const Footer = () => {
   ]
 
   return (
-    <footer className='mt-24 p-6 w-11/12 mx-auto text-sm'>
-      <div className='grid grid-cols-5'>
-
-        <div>
-          <h3>Fusion Media</h3>
-        </div>
-
-        <div className='flex flex-col gap-1'>
-          <h3 className='uppercase text-[#ef6d58]'>Menu</h3>
-          {
-            menuLinks?.map((item, i) => {
-
-              return(
-                <Link key={i} href={item.url} title={item.name}>{item.name}</Link>
-              )
-
-            })
-          }
-        </div>
-
-        <div className='flex flex-col gap-1'>
-          <h3 className='uppercase text-[#ef6d58]'>Servicios</h3>
-          {
-            serviceLinks?.map((item, i) => {
-
-              return(
-                <Link key={i} href={item.url} title={item.name}>{item.name}</Link>
-              )
-
-            })
-          }
-        </div>
-
-        <div className='col-span-2 flex justify-end items-end'>
+    <footer className='mt-24 p-6 w-11/12 mx-auto text-sm text-gray-300'>
+      <div>
+        <div className='flex justify-end items-end'>
           <div className='flex gap-3'>
 
             {
@@ -110,8 +79,7 @@ export const Footer = () => {
 
 
       </div>
-      <hr className='my-8' />
-      <div className='flex justify-between text-sm'>
+      <div className='flex justify-between text-sm mt-6'>
         <div>
           <p>Copyright &copy; {new Date().getFullYear()} Fusion Media. All Rights Reserved.</p>
         </div>

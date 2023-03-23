@@ -6,7 +6,7 @@ export const Navbar = () => {
     <nav className='px-6 w-11/12 mx-auto'>
       <div className='flex justify-between items-center'>
         <Link href={'/'} ><img src="/static/images/fusion_media_logo.png" className='w-12' alt="Logo Fusion Media" /></Link>
-        <div className='flex gap-3 text-gray-300'>
+        <div className='flex gap-3 text-gray-300 hidden'>
           <Link href={'/acerca-de'} >¿Quiénes somos?</Link>
           <Link href={'/'} >Contacto</Link>
           <Link href={'/'} >Portafolio</Link>
